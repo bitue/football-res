@@ -25,12 +25,16 @@ main {
 /* for header css starts */
 
 header {
-    background-image: linear-gradient(-90deg, rgb(45, 201, 221), rgb(11, 153, 209));
+    background-image: linear-gradient(-90deg, rgb(45, 201, 221), rgb(147, 202, 224));
     padding: 30px 0px;
 }
 
 h1 {
     font-size: 50px;
+}
+
+.left-part>h1 {
+    margin-bottom: 20px;
 }
 
 h1:hover {
@@ -62,7 +66,7 @@ h1:hover {
 button {
     background-color: skyblue;
     padding: 10px 24px;
-    border: 2px solid skyblue;
+    border: 2px solid black;
     margin-top: 20px;
     transition: border-radius 1s ease;
     font-weight: 700;
