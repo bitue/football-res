@@ -1,0 +1,151 @@
+/* overall css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-color: #fff;
+}
+
+/* overall css ends here */
+
+/* for header css starts */
+
+header {
+    background-image: linear-gradient(-90deg, rgb(45, 201, 221), rgb(11, 153, 209));
+    padding: 30px 0px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1:hover {
+    animation: zigling 2s ease 1 alternate;
+}
+
+.flex-hero {
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+.right-part {
+    /* transition: transform 2s ease-in; */
+    width: 550px;
+}
+
+.right-part img {
+    width: 100%;
+}
+
+.right-part:hover {
+    animation: zigling 2s ease 1 alternate;
+}
+
+button {
+    background-color: skyblue;
+    padding: 10px 24px;
+    border: 2px solid skyblue;
+    margin-top: 20px;
+    transition: border-radius 1s ease;
+    font-weight: 700;
+}
+
+@keyframes zigling {
+    from {
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+    to {
+        transform: rotate(360deg);
+        transform-origin: center;
+    }
+}
+
+button:hover {
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* button:hover .right-part>img {
+    transform: scale(.75);
+    /* ?transition: all 2s ease-in; */
+
+.play {
+    margin: 60px 0px;
+}
+
+.wrapper {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.grid-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.player {
+    width: 340px;
+    height: 474px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgb(231, 231, 231);
+}
+
+.player .img {
+    width: 320px;
+}
+
+.img img {
+    width: 100%;
+}
+
+.des h2, .des p {
+    margin: 20px 0px;
+}
+
+.flex-foot {
+    width: 480px;
+    height: 215px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 475px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.link i {
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.foot {
+    margin-top: 15px;
+}
