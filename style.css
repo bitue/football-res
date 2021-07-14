@@ -228,7 +228,6 @@ p input {
 
 /* ------------- using media query here --------------- */
 
-
 /* Destop mode media query */
 
 @media screen and (min-width:1080px) {
@@ -236,7 +235,9 @@ p input {
         font-size: 50px;
     }
 }
+
 /* Tablet mode media query */
+
 @media screen and (min-width:688px) and (max-width:1080px) {
     .flex-hero {
         display: grid;
@@ -257,8 +258,13 @@ p input {
     h1 {
         font-size: 45px;
     }
+    .left-part {
+        padding-bottom: 50px;
+    }
 }
+
 /* mobile phone media query */
+
 @media screen and (max-width:688px) {
     .flex-hero {
         display: grid;
@@ -288,7 +294,7 @@ p input {
         padding-left: 20px;
     }
     .left-part {
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
     .link i {
         font-size: 22px;
