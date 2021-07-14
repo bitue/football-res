@@ -291,4 +291,8 @@ p input {
     .logo {
         width: 70%;
     }
+    h1 {
+        font-size: 35px;
+        padding-left: 20px;
+    }
 }
