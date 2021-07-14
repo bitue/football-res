@@ -228,23 +228,15 @@ p input {
 
 /* ------------- using media query here --------------- */
 
-/* mobile device  */
 
-/* @media screen and (max-width:688px){
-    .flex-hero,.get-ticket ,.wrapper ,.grid-high{
-        width: 100%;
-    }
-    .flex-hero {
-        flex-direction: column;
-    }
-} */
+/* Destop mode media query */
 
 @media screen and (min-width:1080px) {
     h1 {
         font-size: 50px;
     }
 }
-
+/* Tablet mode media query */
 @media screen and (min-width:688px) and (max-width:1080px) {
     .flex-hero {
         display: grid;
@@ -266,7 +258,7 @@ p input {
         font-size: 45px;
     }
 }
-
+/* mobile phone media query */
 @media screen and (max-width:688px) {
     .flex-hero {
         display: grid;
