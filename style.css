@@ -77,6 +77,15 @@ button {
     font-weight: 700;
 }
 
+button:hover {
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* end of header section  */
+
+/* added animation here -------------------------------- */
+
 @keyframes zigling {
     from {
         transform: rotate(0deg);
@@ -88,14 +97,9 @@ button {
     }
 }
 
-button:hover {
-    border-radius: 25px;
-    cursor: pointer;
-}
+/* -------------------------animation code end---------- */
 
-/* button:hover .right-part>img {
-    transform: scale(.75);
-    /* ?transition: all 2s ease-in; */
+/* starts player section */
 
 .play {
     margin: 60px 0px;
@@ -131,6 +135,10 @@ button:hover {
     margin: 20px 0px;
 }
 
+/* ends player section */
+
+/* extra highlights section */
+
 .grid-high {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -138,6 +146,10 @@ button:hover {
     margin: 40px auto;
     grid-gap: 20px;
 }
+
+/* end highlights section */
+
+/* Buy Ticket section  */
 
 .get-ticket {
     width: 1050px;
@@ -174,6 +186,10 @@ p input {
     padding: 0px 14px;
 }
 
+/* end ticket section */
+
+/* footer section starts */
+
 .flex-foot {
     width: 480px;
     height: 215px;
@@ -201,3 +217,5 @@ p input {
 .foot {
     margin-top: 15px;
 }
+
+/* end of footer section */
