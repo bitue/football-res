@@ -21,10 +21,6 @@ h2 {
     margin: 30px 0;
 }
 
-main {
-    background-color: #fff;
-}
-
 /* overall css ends here */
 
 /* for header css starts */
@@ -121,6 +117,7 @@ button:hover {
     height: 474px;
     padding: 10px;
     box-shadow: 0px 0px 20px rgb(231, 231, 231);
+    margin: 0 auto;
 }
 
 .player .img {
@@ -135,6 +132,10 @@ button:hover {
     margin: 20px 0px;
 }
 
+.des h2 {
+    text-align: left;
+}
+
 /* ends player section */
 
 /* extra highlights section */
@@ -145,6 +146,11 @@ button:hover {
     width: 1050px;
     margin: 40px auto;
     grid-gap: 20px;
+}
+
+.video {
+    width: 320px;
+    margin: 0 auto;
 }
 
 /* end highlights section */
@@ -219,3 +225,70 @@ p input {
 }
 
 /* end of footer section */
+
+/* ------------- using media query here --------------- */
+
+/* mobile device  */
+
+/* @media screen and (max-width:688px){
+    .flex-hero,.get-ticket ,.wrapper ,.grid-high{
+        width: 100%;
+    }
+    .flex-hero {
+        flex-direction: column;
+    }
+} */
+
+@media screen and (min-width:1080px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width:688px) and (max-width:1080px) {
+    .flex-hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .grid-high, .grid-players {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .flex-hero, .get-ticket, .wrapper, .grid-high {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .flex-hero {
+        padding: 40px 0px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:688px) {
+    .flex-hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .grid-high, .grid-players {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .flex-hero, .get-ticket, .wrapper, .grid-high {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .right-part {
+        /* transition: transform 2s ease-in; */
+        width: 100%;
+    }
+    .flex-foot {
+        width: 100%;
+    }
+    .logo {
+        width: 70%;
+    }
+}
