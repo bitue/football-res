@@ -16,6 +16,11 @@ a {
     color: black;
 }
 
+h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
 main {
     background-color: #fff;
 }
@@ -126,17 +131,47 @@ button:hover {
     margin: 20px 0px;
 }
 
-.highlights>h2 {
-    text-align: center;
-    margin: 30px 0;
-}
-
 .grid-high {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 1050px;
-    margin: 0 auto;
+    margin: 40px auto;
     grid-gap: 20px;
+}
+
+.get-ticket {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+
+.ticket-section {
+    background-image: linear-gradient(-90deg, rgb(45, 201, 221), rgb(147, 202, 224));
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.form-ticket {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-ticket p {
+    padding: 10px 20px;
+}
+
+p input {
+    padding: 10px 20px;
+}
+
+.form-ticket button {
+    margin-right: 20px;
+}
+
+.form-ticket button i {
+    font-size: 23px;
+    padding: 0px 14px;
 }
 
 .flex-foot {
