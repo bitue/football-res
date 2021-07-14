@@ -298,4 +298,7 @@ p input {
     .left-part {
         padding-bottom: 20px;
     }
+    .link i {
+        font-size: 20px;
+    }
 }
